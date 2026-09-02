@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-/*  challenge 1. calculate % Test score
+/*  challenge 1. calculate  5 Test score
 
 Ask for 5 test scores and calculate: if ? the 5 test score is 100,90, 60,75, 20
 Total
@@ -22,7 +22,7 @@ public class TestScores {
         int highest = scores[0];
         int lowest = scores[0];
 
-        // Get 5 scores from the user input 
+        // Get 5 scores from the user input() 
         for (int i = 0; i < 5; i++) {
             System.out.print("Enter test score " + (i + 1) + ": ");
             scores[i] = input.nextInt();
@@ -37,15 +37,12 @@ public class TestScores {
             }
         }
 
-        // Print summary
+
         System.out.println();
         System.out.println("Total: " + total);
         System.out.println("Average: " + average);
         System.out.println("Highest: " + highest);
-        System.out.println("Lowest: " + lowest);
-
-        // Print each score with its letter grade
-        // 4System.out.println();
+        System.out.println("Lowest: " + lowest); 
         System.out.println("Your values were:");
         for (int i = 0; i < 5; i++) {
             System.out.println(scores[i] + " - " + getGrade(scores[i]));
@@ -54,7 +51,6 @@ public class TestScores {
         input.close();
     }
 
-    // Method to assign a letter grade based on score
     static char getGrade(int score) {
         if (score >= 90) {
             return 'A';
